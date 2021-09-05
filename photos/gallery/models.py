@@ -2,27 +2,31 @@ from django.db import models
 
 # Create your models here.
 
+
+
+
 class Location(models.Model):
-    location = models.CharField(max_length= 255, blank =False, null=False)
-    active   = models.BooleanField(default=True)
-    
+    location = models.CharField(max_length=255, blank=False, null=False)
+    active = models.BooleanField(default=True)
+
     def save_location(self):
         self.save()
 
     def delete_location(self):
         self.delete()
-    
+
     @classmethod
     def get_location(cls):
         locations = cls.objects.all()
         return locations
-    
+
     def __str__(self):
         return self.location
-    
+
     class Meta:
         verbose_name = 'Location'
         verbose_name_plural = 'Locations'
+
 
 class Category(models.Model):
     category = models.CharField(max_length=255, blank=False, null=False, unique=True)
@@ -50,7 +54,8 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
-
+    
+    
 class Image(models.Model):
     image_name = models.CharField(max_length=255, blank=False, null=False)
     description = models.TextField(blank=False, null=False)
@@ -106,3 +111,4 @@ class Image(models.Model):
         verbose_name = 'My image'
         verbose_name_plural = 'Images'
 
+    
