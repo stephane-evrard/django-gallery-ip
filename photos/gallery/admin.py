@@ -10,6 +10,7 @@ from .models import Location, Category, Image
 admin.site.register(Location)
 admin.site.register(Category)
 
+
 class ImageAdmin(admin.ModelAdmin):
     date_hierarchy = 'pub_date'
     list_display       = ['image_name', 'location', 'category', 'active', 'pub_date']
@@ -21,3 +22,5 @@ class ImageAdmin(admin.ModelAdmin):
     class Meta:
         model = Image
 admin.site.register(Image, ImageAdmin)
+
+
