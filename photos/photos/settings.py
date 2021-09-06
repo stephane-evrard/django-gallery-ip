@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-*q_c*y#imfq_5eds=x719fe-wqd(_zay&w#0k)#k=b7gwgtkqu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','django-gallery-ip.herokuapp.com']
+ALLOWED_HOSTS = ['django-gallery-app.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
