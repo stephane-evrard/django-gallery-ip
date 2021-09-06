@@ -13,7 +13,7 @@ This is a photo gallery web Application where you can view photos and see the de
 
 - Users can click on a single photo to expand it and also view details of the photo.
 
-- Users can search for different categories of photos.
+- Users can search for different categories of photos (town, village, landscape, house).
 
 -  Users can copy a link to the photo to share with friends. 
 
