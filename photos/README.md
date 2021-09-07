@@ -65,6 +65,9 @@ run:
 * Django
 * MDBootstrap
 
+#Live link on heroku
+    https://nameless-meadow-70772.herokuapp.com/
+
 
 # AUTHOR
 
